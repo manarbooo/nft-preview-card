@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+:root{
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very_dark_blue_mainBG: hsl(217, 54%, 11%);
+    --Very_dark_blue_cardBG: hsl(216, 50%, 16%);
+    --Very_dark_blue_line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+html,body{
+    height: 130vh;
+    width: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    background-color: var(--Very_dark_blue_mainBG);
+}
+
+.container{
+    width: 350px;
+    height: fit-content;
+    background-color: var(--Very_dark_blue_cardBG);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.mainImg{
+    width: 90%;
+    height: 50%;
+    
+}
+
+
+.mainImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.title{
+    color: var(--White);
+    margin-right: 105px;
+    margin-top: -0.5px;
+    font-size: 24px;
+}
+
+.description{
+    color: var(--Soft_blue);
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+
+.addInfo{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: -30px;
+}
+
+.details{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.details img {
+    margin-right: 8px; 
+}
+
+.ethSpan {
+    white-space: nowrap; 
+    color: var(--Cyan);
+}
+
+.timeSpan{
+    white-space: nowrap; 
+    color: var(--Soft_blue);   
+}
+
+.divider{
+    width: 90%;
+    height: 1px;
+    background-color: var(--Very_dark_blue_line);
+    margin-left: 5px;
+    margin-top: -9px;
+}
+
+.creatorProfile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.creatorProfile img{
+    height: 38px;
+    width: 38px;
+    border: 2px solid var(--White);
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: -50px;
+}
+
+.creator{
+    margin-top: 25px;
+    color: var(--Soft_blue);
+}
+
+.creatorName{
+    color: var(--White);
+}
